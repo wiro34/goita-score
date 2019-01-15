@@ -1,0 +1,5 @@
+{
+    "editor.formatOnSave": true,
+    "html.format.wrapLineLength": 100,
+    "editor.tabSize": 2
+}

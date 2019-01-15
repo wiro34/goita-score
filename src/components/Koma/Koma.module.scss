@@ -1,0 +1,34 @@
+$koma-width: 56px;
+$koma-height: 64px;
+
+.koma {
+  background-color: #fcdda5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: $koma-width;
+  height: $koma-height;
+  margin-right: 20px;
+
+  &:last {
+    margin-right: 0;
+  }
+}
+
+.dragging {
+  visibility: hidden;
+}
+
+.preview {
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.palette {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
