@@ -5,6 +5,7 @@ import TouchBackend from "react-dnd-touch-backend";
 import Header from "./components/Header/Header";
 import { KomaDropTarget, KomaPalette } from "./components/Koma";
 import { Koma } from "./components/Koma/Koma";
+import OrientationOverlay from "./components/OrientationOverlay/OrientationOverlay";
 import ScoreIndicator from "./components/ScoreIndicator/ScoreIndicator";
 import UndoButton from "./components/UndoButton/UndoButton";
 import styles from "./App.module.scss";
@@ -97,6 +98,8 @@ class App extends Component<{}, State> {
         <Container>
           <KomaPalette />
         </Container>
+
+        <OrientationOverlay />
       </Fragment>
     );
   }
