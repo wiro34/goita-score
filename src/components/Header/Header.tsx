@@ -3,9 +3,11 @@ import {
   Navbar,
   NavbarBrand,
   NavbarItem,
+  NavbarStart,
   NavbarEnd,
   NavbarMenu
 } from "bloomer";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import FullScreenButton, {
   Orientation
 } from "../FullScreenButton/FullScreenButton";
@@ -19,7 +21,12 @@ class Header extends Component {
         </NavbarBrand>
 
         <NavbarMenu isActive={true}>
-          <NavbarEnd isFullWidth>
+          <NavbarStart>
+            <NavbarItem href="https://github.com/wiro34/goita-score">
+              <FontAwesomeIcon icon={["fab", "github"]} />
+            </NavbarItem>
+          </NavbarStart>
+          <NavbarEnd>
             <NavbarItem>
               <FullScreenButton orientation={Orientation.landscape} />
             </NavbarItem>
