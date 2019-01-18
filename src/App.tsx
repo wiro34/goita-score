@@ -19,13 +19,6 @@ class App extends Component<{}, State> {
     eastScore: 0
   };
 
-  componentDidMount() {
-    if (screen.orientation && screen.orientation.lock) {
-      const noop = () => {};
-      screen.orientation.lock("landscape").then(noop, noop);
-    }
-  }
-
   onEastDrop(koma: Koma) {
     this.setState({
       ...this.state,
