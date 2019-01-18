@@ -1,5 +1,10 @@
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { faExpand, faCompress } from "@fortawesome/free-solid-svg-icons";
+import {
+  faExpand,
+  faCompress,
+  faUndoAlt
+} from "@fortawesome/free-solid-svg-icons";
 
 library.add(faExpand);
 library.add(faCompress);
+library.add(faUndoAlt);
