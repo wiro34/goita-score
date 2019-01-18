@@ -8,10 +8,10 @@ class KomaPalette extends Component {
   render() {
     return (
       <ul className={styles.palette}>
+        <KomaDragPreview />
         {KomaList.map(model => (
           <KomaItem label={model.label} key={model.label} />
         ))}
-        <KomaDragPreview />
       </ul>
     );
   }

@@ -1,8 +1,13 @@
 $koma-width: 56px;
-$koma-height: 64px;
+$koma-height: 56px;
 
 .koma {
-  background-color: #fcdda5;
+  // background-color: #fcdda5;
+  background-image: url('./Koma.svg');
+  font-size: 1.8rem;
+  padding-top: 5px;
+  font-family: 'Noto Serif JP';
+  font-weight: 900;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,7 +15,7 @@ $koma-height: 64px;
   height: $koma-height;
   margin-right: 20px;
 
-  &:last {
+  &:last-child {
     margin-right: 0;
   }
 }
