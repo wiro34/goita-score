@@ -95,7 +95,7 @@ class App extends Component<{}, State> {
           </div>
         </Container>
 
-        <Container>
+        <Container isFluid isMarginless>
           <KomaPalette />
         </Container>
 
